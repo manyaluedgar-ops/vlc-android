@@ -831,7 +831,6 @@ class VideoPlayerOverlayDelegate (private val player: VideoPlayerActivity) {
             hudBinding.bookmarkMarkerContainer.setPadding(overscanHorizontal, 0, overscanHorizontal, 0)
 
             if (player.isTv) {
-                applyVerticalMargin(hudBinding.playerOverlayPlay, overscanVertical)
                 applyMargin(hudBinding.playerOverlayTime, overscanHorizontal, false)
                 applyMargin(hudBinding.playerOverlayLength, overscanHorizontal, true)
             }
